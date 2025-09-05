@@ -6,7 +6,7 @@ const app = express();
 import cors from "cors";
 import morgan from "morgan";
 app.use(cors({
-  origin: "http://localhost:3000" // only allow this frontend
+  origin: "http://localhost:5173" // only allow this frontend
 })); // to allow cross-origin requests (important for APIs)
 app.use(express.json()); // to parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
